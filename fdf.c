@@ -1,22 +1,4 @@
-#include "mlx_linux/mlx.h"
-
-typedef struct	s_data {
-	void	*img;
-	char	*addr;
-	int		bits_per_pixel;
-	int		line_length;
-	int		endian;
-}				t_data;
-
-
-typedef struct s_coordinates {
-
-	int x;
-	int x1;
-	int y;
-	int y1;	
-
-}	t_coordinates;
+#include "fdf.h"
 
 
 void	my_mlx_pixel_put(t_data *data, int x, int y, int color)
@@ -37,7 +19,6 @@ void draw_line(t_data *data, t_coordinates *pos, int color)
 		pos->x = pos->x + 1;
 		i++;
 	}
-
 
 }
 

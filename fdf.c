@@ -47,7 +47,7 @@ int    main(void)
 		x_start = 200;
 		while(x_start < x_end)
 		{
-			my_mlx_pixel_put(&mlx.mlx, x_start, y_start, 0x00FFFFFF);
+			my_mlx_pixel_put(mlx.mlx, x_start, y_start, 0x00FFFFFF);
 			x_start++;
 		}
     	y_start++;    

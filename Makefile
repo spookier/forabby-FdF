@@ -3,7 +3,7 @@ COMPILER=cc
 
 
 ex:
-	$(COMPILER) fdf.c $(MLX_FLAGS) && ./a.out 
+	$(COMPILER) -I mlx_linux fdf.c -g3 $(MLX_FLAGS) && ./a.out 
 
 clean:
 	rm -rf a.out

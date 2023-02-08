@@ -9,8 +9,6 @@
 # define ESC		0xFF1B
 
 typedef struct	s_data {
-	void    *mlx;
-    void    *mlx_win;
 	void	*img;
 	char	*addr;
 	int		bits_per_pixel;
